@@ -3,6 +3,10 @@
 // Released under the terms of the MIT License.
 // See https://opensource.org/licenses/MIT
 
+// This code is best understood in the context of the ISA documentation (e.g.
+// many of the variable names are taken from the documentation).
+// See https://github.com/pepaslabs/LC-3b/blob/master/doc/LC-3b%20ISA.pdf
+
 #include <unistd.h>
 #include <stdint.h>
 #include <stdio.h>
