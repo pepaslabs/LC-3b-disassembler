@@ -1,5 +1,7 @@
 This is an [LC-3b](https://en.wikipedia.org/wiki/LC-3) disassembler.
 
+This code is best understood in the context of the [ISA documentation](../doc/LC-3b%20ISA.pdf) (e.g. many variable names correspond to the ISA doc).
+
 ## Compilation
 
 ```
