@@ -1,0 +1,10 @@
+Please correct the operation of the JSR/JSRR instruction to read:
+
+TEMP = PC†
+if (bit(11)==0)
+    PC = BaseR;
+else
+    PC = PC† + LSHF(SEXT(PCoffset11), 1);
+R7 = TEMP;
+
+* PC†: incremented PC 
