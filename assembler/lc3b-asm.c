@@ -1,3 +1,5 @@
+// Note: this is not working / not finished yet.
+
 // An assembler for the LC-3b.
 // Copyright 2018 Jason Pepas
 // Released under the terms of the MIT License.
@@ -17,7 +19,7 @@
 // Read a line of input into the supplied buffer, not exceeding count bytes.
 // Returns the the number of bytes read (not including the trailing newline).
 // 'buf' will always be null terminated upon return.
-ssize_t getline(int fd, char *buf, size_t count) {
+ssize_t get_line(int fd, char *buf, size_t count) {
     ssize_t total = 0;
     char ch;
     while (true) {
@@ -43,7 +45,7 @@ int main(int argc, char **argv) {
     // Read a line of LC-3b assembly at a time and turn it into a machine instruction.
     while(1) {
         char buf[1024];
-        getline(stdin)
+        get_line(fileno(stdin), buf, 1024);
 
         instruction_t i;
         ssize_t ret;
@@ -332,4 +334,3 @@ void do_instruction(instruction_t i) {
         exit(4);
     }
 }
-

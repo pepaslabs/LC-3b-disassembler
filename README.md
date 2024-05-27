@@ -4,7 +4,7 @@ Here are some tools I have written related to the [LC-3b](https://en.wikipedia.o
 which is a simple CPU architecture intended as a teaching tool.
 
 * [disassembler](./disassembler/) (written in C99)
-* [assembler](./assembler/) (written in C99)
+* [assembler](./assembler/) (INCOMPLETE) (written in C99)
 
 
 ## The book
